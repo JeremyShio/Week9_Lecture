@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 // req (headers, parameters, body)
 app.get('/', (req, res) => {
     // res (response express app sends once req is made)
-    res.render('index');
+    res.render('index', {firstName: 'Jeremy'});
 });
 
 
